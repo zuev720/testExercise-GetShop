@@ -17,7 +17,7 @@
   margin-left: auto;
 }
 
-.screen {
+.PromoPage {
   position: relative;
   width: 1280px;
   height: 721px;
@@ -27,17 +27,24 @@
   border-top-right-radius: 5px;
 }
 
-.video {
+.player {
   pointer-events: none;
-  /*position: absolute;*/
 }
 
-.banner {
+.Banner {
+  opacity: 0;
+  z-index: -1;
   position: absolute;
   width: 176px;
   height: 387px;
   left: 1029px;
   top: 167px;
+}
+
+.active {
+  opacity: 1;
+  z-index: 100;
+  transition: opacity 1.5s;
 }
 
 .bannerFrame {
@@ -96,4 +103,10 @@
 
 .bannerButton:hover {
   background: #2a4362;
+}
+
+.ScreenKeyboardPage {
+  width: 100%;
+  height: 100%;
+  background: aliceblue;
 }
