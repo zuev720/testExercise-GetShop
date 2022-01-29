@@ -1,70 +1,38 @@
-# Getting Started with Create React App
+Задание для Junior Frontend Developer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+В качестве тестового задания необходимо создать упрощенную демо-версию микросайта для SmartTV. Посмотреть пример работы механики можно [здесь](https://drive.google.com/file/d/11nfey19N6pPm43D6bbUxZgxRC0kwIp_O/view?usp=sharing) или [здесь](http://getshop.tv/portfolio/volvo/).
 
-## Available Scripts
+[Ссылка на макет](https://www.figma.com/file/TxI66vUCvCTtX5ljGR3fxe/FrontTestVOD?node-id=167%3A408)
 
-In the project directory, you can run:
+Микросайт состоит из серии экранов:
+промо-видео с баннером (верстать не обязательно)
+экран ввода номера (с экранной клавиатурой)
+финальный инфо-экран
+Необходимо реализовать вёрстку экранов микросайта, а также навигацию и механизм ввода номера при помощи экранной клавиатуры. Кнопка «Получить предложение» должна становиться доступной для выбора (enabled) только при полностью введенном номере и согласии с обработкой ПД. Валидацию номера проводить не нужно, достаточно проверять, что номер введен полностью.
+Неинтерактивные статичные элементы (включая текст) разрешается не верстать, а использовать как часть (фоновой) картинки. 
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Для первого экрана добавить видео (отрывок около минуты длиной, к примеру [отсюда](https://youtu.be/M7FIvfx5J10)) и баннер, появляющийся через 5 секунд от начала проигрывания ролика.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Навигация должна осуществляться также и с клавиатуры:
+стрелки для навигации между кнопками;
+цифры и BACKSPACE для быстрого ввода номера;
+ENTER для выбора кнопки;
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Требования:
+Используйте React (использование TypeScript будет плюсом)
+Если сочтете нужным, можете использовать сторонние библиотеки.
+Разрешение микросайта фиксированное, 1280х720.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+На выходе ожидается:
+Ссылка на github/gitlab с осмысленной историей коммитов
+Ссылка на развернутую версию микросайта
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Бонусные задания:
+Переход из экрана с видео и баннером должен паузить видео. Переход обратно должен продолжать воспроизведение.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+добавить валидацию номера при помощи открытого сервиса ([например](https://numverify.com/documentation)).
+Вместо финального инфо-экрана сверстайте экран со слайдером. Управление слайдером осуществляется также и с помощью клавиатуры. [Пример](https://www.figma.com/file/g1TyR1AAvI2Hratgdm6PiL/Untitled?node-id=1%3A2) 
