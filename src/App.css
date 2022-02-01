@@ -182,7 +182,13 @@
   width: 186px;
 }
 
-.agreeBlock {
+.keyActive, .KeyboardKey:focus, .KeyboardKey:active, .KeyboardKey:hover{
+  background: #000000;
+  color: #FFFFFF;
+  border: none;
+}
+
+.AgreeCheckbox {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -191,16 +197,22 @@
   height: 52px;
 }
 
-.agreeRadio {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+.inputWrapper {
   width: 40px;
   height: 40px;
+  padding: 5px;
   border: 2px solid #000000;
 }
 
-.agreeRadio:checked {
+.radio {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 100%;
+}
+
+.radio:checked {
   background-image: url('../public/images/checkMark.png');
   background-position: center;
   background-repeat: no-repeat;
@@ -218,7 +230,7 @@
   cursor: pointer;
 }
 
-.confirmNumber {
+.ButtonConfirmNumber {
   width: 284px;
   height: 52px;
   background: inherit;
@@ -253,7 +265,7 @@
   cursor: pointer;
 }
 
-.CancelButton:hover {
+.CancelButton:focus, .CancelButton:hover {
   border: none;
 }
 
