@@ -65,6 +65,7 @@ const screenKeyboardReducer = createSlice({
             if (state.section === 'radio') {
                 state.section = 'confirmNumber';
                 state.activeElem = 'ButtonConfirmNumber';
+                return ;
             }
             if (state.section === 'confirmNumber') {
                 state.section = 'cancelButton';

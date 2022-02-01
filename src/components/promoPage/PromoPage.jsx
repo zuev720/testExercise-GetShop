@@ -1,6 +1,7 @@
 import React from "react";
 import ReactPlayer from 'react-player/youtube'
 import {Banner} from "./Banner";
+import './css/index.css';
 
 export function PromoPage() {
 

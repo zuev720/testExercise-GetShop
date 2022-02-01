@@ -1,6 +1,7 @@
 import React, {useCallback, useEffect, useState} from "react";
-import {Panel} from "./Panel";
 import {useDispatch, useSelector} from "react-redux";
+import './css/index.css'
+import {Panel} from "./Panel";
 import {CancelButton} from "./CancelButton";
 import {
     arrowDownAction,
@@ -9,8 +10,10 @@ import {
     arrowUpAction, setActiveElement,
 } from "../../store/screenKeyboardReducer";
 import {addNumber, deleteNumber} from "../../store/phoneNumberReducer";
+import {useHistory} from "react-router-dom";
 
 export function ScreenKeyboardPage() {
+    const history = useHistory();
     const dispatch = useDispatch();
     const phoneNumber = useSelector((state) => state.phoneNumber);
     const {section, activeElem} = useSelector((state) => state.screenKeyboard);
@@ -26,6 +29,9 @@ export function ScreenKeyboardPage() {
                 (activeElem === 'стереть') ? dispatch(deleteNumber()) : dispatch(addNumber(activeElem));
             }
             if (section === 'radio') return setCheckedAgree((!checkedAgree));
+            if (section === 'confirmNumber' && checkedAgree && phoneNumber.length === 10) {
+                return history.push('/slider');
+            }
         }
 
         if (!isNaN(Number(e.key)) && e.code !== 'Space') {
@@ -36,7 +42,7 @@ export function ScreenKeyboardPage() {
 
         if (e.code === 'Space' && e.key === ' ' && phoneNumber.length > Number(0)) return dispatch(deleteNumber());
 
-    }, [activeElem, checkedAgree, dispatch, phoneNumber.length, section]);
+    }, [activeElem, checkedAgree, dispatch, history, phoneNumber.length, section]);
 
 
     useEffect(() => {

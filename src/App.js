@@ -4,6 +4,7 @@ import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import {PromoPage} from "./components/promoPage/PromoPage";
 import {ScreenKeyboardPage} from "./components/screenKeyboardPage/ScreenKeyboardPage";
 import './App.css';
+import {SliderPage} from "./components/sliderPage/SliderPage";
 
 function App() {
     return (
@@ -15,6 +16,9 @@ function App() {
                             <Switch>
                                 <Route path={'/keyboard-screen'}>
                                     <ScreenKeyboardPage/>
+                                </Route>
+                                <Route path={'/slider'}>
+                                    <SliderPage/>
                                 </Route>
                                 <Route path={'/'}>
                                     <PromoPage/>

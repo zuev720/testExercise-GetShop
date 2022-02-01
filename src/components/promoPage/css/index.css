@@ -1,0 +1,74 @@
+.PromoPage {
+    width: 100%;
+    height: 100%;
+}
+
+.player {
+    pointer-events: none;
+}
+
+.Banner {
+    opacity: 0;
+    z-index: -1;
+    position: absolute;
+    width: 176px;
+    height: 387px;
+    left: 1029px;
+    top: 167px;
+}
+
+.active {
+    opacity: 1;
+    z-index: 100;
+    transition: opacity 1.5s;
+}
+
+.bannerFrame {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 30px 10px 10px 10px;
+    width: 251px;
+    height: 357px;
+    left: 0;
+    top: 53px;
+    background: #86D3F4;
+}
+
+.bannerHeader {
+    font-weight: 500;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.qr-code {
+    width: 126px;
+    height: 126px;
+}
+
+.bannerText {
+    width: 126px;
+    font-weight: normal;
+    font-size: 14px;
+    color: #000000;
+}
+
+.bannerButton {
+    width: 156px;
+    height: 52px;
+    background: #000000;
+    border: none;
+    font-weight: 500;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #86D3F4;
+    cursor: pointer;
+}
+
+.bannerButton:hover {
+    background: #2a4362;
+}
