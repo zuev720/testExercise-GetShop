@@ -84,7 +84,7 @@ export function ScreenKeyboardPage() {
             />
             <div className={'ImageInfoBlock'}/>
             <CancelButton activeElem={activeElem}/>
-            <img className={'qrCodeInfo'} src={'images/qrCodeInfo.png'} alt="qr-code"/>
+            <img className={'qrCodeInfo'} src={'./qrCodeInfo.png'} alt="qr-code"/>
         </div>
     )
 }

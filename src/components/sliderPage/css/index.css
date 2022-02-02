@@ -34,19 +34,19 @@
 }
 
 .leftWhite {
-    background-image: url('../../../.././public/images/slider/buttonLeftWhite.png');
+    background-image: url('../../../images/slider/buttonLeftWhite.png');
 }
 
 .leftBlack {
-    background-image: url('../../../.././public/images/slider/buttonLeftBlack.png');
+    background-image: url('../../../images/slider/buttonLeftBlack.png');
 }
 
 .rightWhite {
-    background-image: url('../../../.././public/images/slider/buttonRightWhite.png');
+    background-image: url('../../../images/slider/buttonRightWhite.png');
 }
 
 .rightBlack {
-    background-image: url('../../../.././public/images/slider/buttonRightBlack.png');
+    background-image: url('../../../images/slider/buttonRightBlack.png');
 }
 
 .cancel {
@@ -55,7 +55,7 @@
     height: 52px;
     right: 1.56%;
     top: 2.78%;
-    background-image: url('../../../.././public/images/slider/cancel.png');
+    background-image: url('../../../images/slider/cancel.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

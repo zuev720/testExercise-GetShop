@@ -25,7 +25,7 @@ export const Banner = forwardRef((props, ref) => {
         <div className={className}>
             <div className={'bannerFrame'}>
                 <h5 className={'bannerHeader'}>исполните мечту вашего малыша! подарите ему собаку!</h5>
-                <img className={'qr-code'} src={'./images/qr-code.png'} alt="qr-code"/>
+                <img className={'qr-code'} src={'qr-code.png'} alt="qr-code"/>
                 <p className={'bannerText'}>Сканируйте QR-код или нажмите ОК</p>
                 <button className={'bannerButton'} onClick={handleClick}>ok</button>
             </div>
