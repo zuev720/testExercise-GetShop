@@ -1,5 +1,6 @@
 import {createSlice} from "@reduxjs/toolkit";
 
+// Управляет состоянием номера телефона на странице с экранной клавиатурой
 const phoneNumberReducer = createSlice({
     name: 'phoneNumber',
     initialState: [],
