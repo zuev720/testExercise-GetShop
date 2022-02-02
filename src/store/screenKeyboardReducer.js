@@ -1,6 +1,7 @@
 import {createSlice} from "@reduxjs/toolkit";
 import {keyBoardValues} from "./keyBoard";
 
+// Управляет состоянием нажатий клавиш на странице с экранной клавиатурой
 const screenKeyboardReducer = createSlice({
     name: 'screenKeyboard',
     initialState: {

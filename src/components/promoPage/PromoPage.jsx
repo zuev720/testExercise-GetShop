@@ -1,4 +1,4 @@
-import React, {useRef} from "react";
+import React, {useEffect, useRef} from "react";
 import ReactPlayer from 'react-player/youtube'
 import {Banner} from "./Banner";
 import './css/index.css';
