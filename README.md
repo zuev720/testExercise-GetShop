@@ -1,5 +1,9 @@
 Задание для Junior Frontend Developer
 
+
+[![Build status](https://ci.appveyor.com/api/projects/status/emtri8jisaaft6qj?svg=true)](https://ci.appveyor.com/project/zuev720/testexercise-getshop)
+
+
 В качестве тестового задания необходимо создать упрощенную демо-версию микросайта для SmartTV. Посмотреть пример работы механики можно [здесь](https://drive.google.com/file/d/11nfey19N6pPm43D6bbUxZgxRC0kwIp_O/view?usp=sharing) или [здесь](http://getshop.tv/portfolio/volvo/).
 
 [Ссылка на макет](https://www.figma.com/file/TxI66vUCvCTtX5ljGR3fxe/FrontTestVOD?node-id=167%3A408)
