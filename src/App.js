@@ -9,7 +9,7 @@ import {SliderPage} from "./components/sliderPage/SliderPage";
 function App() {
     return (
         <div className="App">
-            <Router>
+            <Router basename={'shopTV'}>
                 <Provider store={store}>
                     <div className={'screenWrapper'}>
                         <div className={'screen'}>
