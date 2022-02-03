@@ -5,7 +5,6 @@ import './css/index.css';
 import {useSelector} from "react-redux";
 
 export function PromoPage() {
-
     // Время момента начала видео. Хранится в redux. Начальное значение 0.
     const timeVideo = useSelector((state) => state.timeVideo);
     const ref = useRef();

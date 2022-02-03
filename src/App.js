@@ -1,10 +1,11 @@
 import {Provider} from "react-redux";
 import {store} from "./store";
-import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
+import {BrowserRouter as Router, Switch, Route, Redirect} from "react-router-dom";
 import {PromoPage} from "./components/promoPage/PromoPage";
 import {ScreenKeyboardPage} from "./components/screenKeyboardPage/ScreenKeyboardPage";
 import './App.css';
 import {SliderPage} from "./components/sliderPage/SliderPage";
+import React from "react";
 
 function App() {
     return (
@@ -20,7 +21,8 @@ function App() {
                                 <Route path={'/slider'}>
                                     <SliderPage/>
                                 </Route>
-                                <Route path={'/'}>
+                                <Route exact={true} path={'/'}>
+                                    <Redirect to={'/'}/>
                                     <PromoPage/>
                                 </Route>
                             </Switch>

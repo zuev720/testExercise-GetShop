@@ -9,7 +9,7 @@
 .screenWrapper {
   width: 1306px;
   height: 887px;
-  background-image: url(images/smarttv.png);
+  background-image: url('../src/images/smarttv.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;

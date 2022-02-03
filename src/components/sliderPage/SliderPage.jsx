@@ -4,7 +4,7 @@ import {useHistory} from "react-router-dom";
 
 export function SliderPage() {
     const images = useMemo(() => {
-        return ['img1.png', 'img2.png', 'img3.png'];
+        return ['../img1.png', '../img2.png', '../img3.png'];
     }, []);
 
     const [image, setImage] = useState(images[0]);
