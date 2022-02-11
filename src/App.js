@@ -1,16 +1,15 @@
 import {Provider} from "react-redux";
 import {store} from "./store";
-import {BrowserRouter as Router, Switch, Route, Redirect} from "react-router-dom";
+import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import {PromoPage} from "./components/promoPage/PromoPage";
 import {ScreenKeyboardPage} from "./components/screenKeyboardPage/ScreenKeyboardPage";
 import './App.css';
 import {SliderPage} from "./components/sliderPage/SliderPage";
-import React from "react";
 
 function App() {
     return (
         <div className="App">
-            <Router basename={'shopTV'}>
+            <Router>
                 <Provider store={store}>
                     <div className={'screenWrapper'}>
                         <div className={'screen'}>
@@ -21,8 +20,7 @@ function App() {
                                 <Route path={'/slider'}>
                                     <SliderPage/>
                                 </Route>
-                                <Route exact={true} path={'/'}>
-                                    <Redirect to={'/'}/>
+                                <Route path={'/'}>
                                     <PromoPage/>
                                 </Route>
                             </Switch>
